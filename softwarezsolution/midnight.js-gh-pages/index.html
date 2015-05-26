@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+
+  <title>Midnight.js - Switch fixed headers on the fly</title>
+
+  <meta name="description" content="." />
+  <meta name="keywords" content="" />
+  
+  <meta name="author" content="Aerolab" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,300italic,400bold" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  
+
+</head>
+<body>
+
+  
+
+
+
+
+  <div class="first-background" data-midnight="white">
+    <!-- Hi! -->
+  </div>
+
+
+  <header data-midnight="black">
+
+    <div class="container">
+
+     
+
+      <div class="scroll-prompt wow fadeInUp"></div>
+
+      
+    </div>
+
+  </header>
+
+
+  <section class="step step-one" data-midnight="blue">
+
+   
+
+  </section>
+
+
+  <section class="step step-two" data-midnight="light">
+
+
+  </section>
+
+
+  <section class="step step-three" data-midnight="dark">
+
+     
+    </div>
+
+  </section>
+
+
+
+  <section class="step step-four" data-midnight="lighter">
+
+      
+    </div>
+
+  </section>
+
+
+  <section class="step step-five full-height" data-midnight="white">
+
+    
+
+
+    </div>
+
+  </section>
+
+
+
+  <footer class="footer" data-midnight="full">
+
+
+    
+    
+      
+
+
+    </div>
+
+  </footer>
+
+
+    <script src="assets/js/sscr.min.js"></script>
+  <script>
+
+
+
+    $(document).ready(function(){
+      // vh fix for iOS7 (Not that it works well on that anyway)
+      
+
+
+      $(document).scroll(function(){
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var minScrollTop = islandTop - windowHeight * 0.4;
+        var maxScrollTop = islandTop;
+
+        // Opacity goes from 1.0 at the bottom 2/3 of the screen to 0.4 at the top
+        if( scrollTop <= islandTop*2 ) {
+          var targetOpacity = 1.0;
+          var minOpacity = 0.4;
+
+          if( scrollTop > minScrollTop && scrollTop < maxScrollTop ) {
+            targetOpacity = ((maxScrollTop - scrollTop) / (maxScrollTop - minScrollTop)) * (1.0 - minOpacity) + minOpacity;
+          }
+          else if( scrollTop > maxScrollTop ) {
+            targetOpacity = minOpacity;
+          }
+          else if( scrollTop < minScrollTop ) {
+            targetOpacity = 1.0;
+          }
+
+          $island.css('opacity', targetOpacity);
+        }
+
+      });
+
+    
+
+    });
+  </script>
+
+</body>
+</html>
