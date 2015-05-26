@@ -15,6 +15,33 @@
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
 <link type="text/css" rel="stylesheet" href="css/login.css" />
 <!-- login setup end -->
+<!-- msg setup end -->
+
+
+
+<style>
+    .block_msg {
+        height:100%;
+        float:left;
+		background-color:#F96;
+		
+		margin-bottom: 10px;
+		margin-left:2%;
+		
+		
+		width:30%;
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		font-size:16px;
+		
+    }
+	 .container_msg {
+        height:100%;
+        text-align: center;
+		width:100%;
+    }
+    </style>
+<!-- msg setup end -->
+
 <!-- view setup -->
 
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -95,6 +122,29 @@
 </section> 
 <!-- content starts -->
 
+<div  class="cd-scrolling-bg cd-color-4 container_msg">
+			<div >
+				<!-- msg setup end--> 
+                <h2 ><strong>Message Boxes :</strong></h2><br><br>
+    <div class="row">
+      <div class="col-md-4"><div class="block_msg" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium<br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium
+      </div></div>
+      <div class="col-md-4"><div class="block_msg" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium<br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium
+      </div></div>
+      <div class="col-md-4"><div class="block_msg" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px">3 .Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium<br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium
+      </div></div>
+    		</div>
+    
+                
+                <!-- msg setup end--> 
+			</div> <!-- cd-container -->
+</div> <!-- cd-scrolling-bg -->
+
+	
+
 		<div id="about" class="cd-scrolling-bg cd-color-3 body1">
 			<div class="cd-container">
 				
@@ -170,21 +220,12 @@
 		</div> <!-- cd-scrolling-bg -->
   
   	
-		<div  class="cd-scrolling-bg cd-color-2">
-			<div class="cd-container">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi, mollitia, repellendus sapiente repudiandae labore rerum amet culpa inventore, modi non. Quo nisi veritatis vitae nam, labore fugit. Inventore culpa iusto, officia exercitationem. Voluptates quibusdam odit odio incidunt consequatur, consectetur aspernatur optio vitae molestias, quas repellendus fugit ullam culpa, eligendi et dignissimos voluptatibus illum? Molestias aliquam nostrum quasi ipsa culpa, iusto explicabo ut error, consequuntur enim temporibus, adipisci tempora voluptate, id consequatur mollitia eveniet blanditiis. Illo quod repellendus alias? Cum rem doloremque adipisci accusantium? Saepe, necessitatibus!
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi, mollitia, repellendus sapiente repudiandae labore rerum amet culpa inventore, modi non. Quo nisi veritatis vitae nam, labore fugit. Inventore culpa iusto, officia exercitationem. Voluptates quibusdam odit odio incidunt consequatur, consectetur aspernatur optio vitae molestias, quas repellendus fugit ullam culpa, eligendi et dignissimos voluptatibus illum? Molestias aliquam nostrum quasi ipsa culpa, iusto explicabo ut error, consequuntur enim temporibus, adipisci tempora voluptate, id consequatur mollitia eveniet blanditiis. Illo quod repellendus alias? Cum rem doloremque adipisci accusantium? Saepe, necessitatibus!
-				</p>
-			</div> <!-- cd-container -->
-		</div> <!-- cd-scrolling-bg -->
-
-	
+		
 
 	
   
   
-</body>
+
 
     
 	 
@@ -320,7 +361,12 @@
 <!-- banner setup end-->   
 <!-- view setup end-->   
 <script src="js/velocity.min.js"></script> 
-<script src="js/mainView.js"></script><!-- view setup end-->   
+<script src="js/mainView.js"></script>
+<!-- view setup end--> 
+<!-- msg setup end-->   
 
+<script src="js/jquery.smoove.js"></script>
+    <script>$('.block_msg').smoove({offset:'40%'});</script>
+<!-- msg setup end-->  
 </body>
 </html>
