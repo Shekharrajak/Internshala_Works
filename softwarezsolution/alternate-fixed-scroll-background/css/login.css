@@ -23,23 +23,23 @@
 }
 
 #modal_trigger { display:block;
- float: right;
-  margin-right: 2%;
-  margin-top:2%;
-  width: 100%;
-  height: 100%;
+ float:right;
+  width:100%;
+  height:100%;
+  position:fixed;
+  margin-left:0px;
    top: 0;
   left: 0;
-  background-size: 44px 44px;
+ 
   cursor: pointer;}
 
-.btn {padding:10px 20px; background: #F4F4F2;}
+.btn_login { background: #F4F4F2;}
 .btn_red {background: #ED6347; color: #FFF;}
 
-.btn:hover {}
+.btn_login:hover {}
 .btn_red:hover {background: #C12B05;}
 
-a.btn {color:#666; text-align: center; text-decoration: none;}
+a.btn_login {color:#666; text-align: center; text-decoration: none;}
 a.btn_red {color: #FFF;}
 
 .one_half {width:50%; display: block; float:left;}
